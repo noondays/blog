@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+
+
+<title>커뮤니티 책/ 스노우볼 팬더밍 - B03 | Hexo</title>
+
+
+
+    <link rel="icon" href="/blog/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/blog/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/blog/js/script.js"></script>
+    
+    <script src="/blog/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/blog/">Home</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/blog/archives">Posts</a>
+                
+                    <a class="menu-item" href="/blog/category">Categories</a>
+                
+                    <a class="menu-item" href="/blog/tag">Tags</a>
+                
+                    <a class="menu-item" href="/blog/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/blog/">Home</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/blog/archives">Posts</a>
+                
+                    <a class="menu-item" href="/blog/category">Categories</a>
+                
+                    <a class="menu-item" href="/blog/tag">Tags</a>
+                
+                    <a class="menu-item" href="/blog/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">커뮤니티 책/ 스노우볼 팬더밍 - B03</h1>
+        </header>
+
+        <div class="post-content">
+            <h2 id="스노우볼-팬더밍"><a href="#스노우볼-팬더밍" class="headerlink" title="스노우볼 팬더밍"></a>스노우볼 팬더밍</h2><p>눈덩이처럼 불어나는 브랜드 팬덤 만들기 &#x2F; 박찬우 지음</p>
+<blockquote>
+<h3 id="커뮤니티-시대가-온다"><a href="#커뮤니티-시대가-온다" class="headerlink" title="커뮤니티 시대가 온다."></a>커뮤니티 시대가 온다.</h3><p>DAO, NTF, 메타버스… 신기술의 출발점이자 목적지는 커뮤니티? 인건가 싶을 정도로 커뮤니티에 대한 관심이 높다. 카페, 밴드, 오픈 채팅방을 넘어 공동 비전과 목표를 가지고 행동하는건 커뮤니티, 팬덤이어야 가능한 분위긴데. 정말일까? 요새 커뮤니티, 팬덤이란 키워드가 있는 책은 모조리 보고 있다. 차례차례 소개할 예정!</p>
+</blockquote>
+<hr>
+<h2 id="스노우볼-팬더밍-서클-SFC"><a href="#스노우볼-팬더밍-서클-SFC" class="headerlink" title="스노우볼 팬더밍 서클(SFC)"></a>스노우볼 팬더밍 서클(SFC)</h2><ol>
+<li>저변 만들기<ul>
+<li>고객이 자유롭게 이야기하고 참여할 수 있는 환경 준비</li>
+</ul>
+</li>
+<li>지지자 발굴<ul>
+<li>고객 접점에서 지지자들 발견</li>
+</ul>
+</li>
+<li>지지자 연결<ul>
+<li>지지자들을 있어 보기에 연결: 팬글럽명, 오프모임</li>
+</ul>
+</li>
+<li>팬으로 육성 <ul>
+<li>육성 프로그램, 참여프로그램, 이벤트</li>
+</ul>
+</li>
+<li>승급과 보상<ul>
+<li>등급과 혜택</li>
+</ul>
+</li>
+<li>전 단계<ul>
+<li>차별화된 문화를 만들어냈는가?</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="팬들은-누구인가"><a href="#팬들은-누구인가" class="headerlink" title="팬들은 누구인가?"></a>팬들은 누구인가?</h2><p>케이팝 팬들은 그들의 스타가 지향하는 가치를 지지하고, 그들이 속해 있는 사회와 긍정적인 영향을 주고받음</p>
+<ul>
+<li>예: 방탄 100만 달러 기부에 아미는 같은 금액 기부</li>
+</ul>
+<h2 id="팬덤-육성-프로세스"><a href="#팬덤-육성-프로세스" class="headerlink" title="팬덤 육성 프로세스"></a>팬덤 육성 프로세스</h2><ul>
+<li><p>알면 좋아하고, 좋아하면 확신하고 구매한다. 구매에 만족하면 추천한다.</p>
+</li>
+<li><p>팬이 되고 팬들이 연결되면 팬덤이 된다.</p>
+<ul>
+<li>인지: 알게되다</li>
+<li>호감: 좋아한다</li>
+<li>질문: 확신한다</li>
+<li>행동: 구매한다</li>
+<li>옹호: 추천한다</li>
+</ul>
+<hr>
+<ul>
+<li>팬: 육성한다</li>
+<li>팬덤: 연결한다</li>
+</ul>
+</li>
+<li><p>옹호단계의 고객은 팬이라기 보다 우리 브랜드의 제품이나 서비스의 지지자, 이러한 지지자들을 발굴해서 육성해야 팬으로 발전시킬 수 있고 팬들을 연결하고 그들만의 문화를 구축하도록 도우면 브랜드 팬덤을 만들 수 있음.</p>
+</li>
+<li><p>브랜드 팬덤은 많은 시간과 노력을 들여 장기적인 관점에서 설계하고, 단기적으로 그들의 지지를 이끌 수 있는 경험들을 지속적으로 쌓아나가야 함</p>
+</li>
+</ul>
+<hr>
+<h2 id="어도비의-마케팅-성과지표"><a href="#어도비의-마케팅-성과지표" class="headerlink" title="어도비의 마케팅 성과지표"></a>어도비의 마케팅 성과지표</h2><p>비즈니스 목적에 맞춰 지표 수립</p>
+<ul>
+<li>브랜드 인지도 향상<ul>
+<li>대화의 양</li>
+<li>소셜 웹에서 언급의 점유율</li>
+<li>감정(긍정&#x2F;부정)</li>
+<li>참여율</li>
+<li>커뮤니티 증가율</li>
+</ul>
+</li>
+<li>고객참여<ul>
+<li>리트윗</li>
+<li>댓글</li>
+<li>메시지</li>
+<li>해시태그</li>
+<li>공유</li>
+</ul>
+</li>
+<li>고객 정보 수집</li>
+<li>고객 요구 분석</li>
+<li>고객 지원</li>
+<li>입소문</li>
+<li>지지도 향상</li>
+<li>고객의 아이디어 수집</li>
+</ul>
+<h2 id="단계별-측정-가능한-목표-세우기"><a href="#단계별-측정-가능한-목표-세우기" class="headerlink" title="단계별, 측정 가능한, 목표 세우기"></a>단계별, 측정 가능한, 목표 세우기</h2><p>SNS채널 운영을 예로 들면, </p>
+<ul>
+<li>초기 단계: 목표 설정하고 이벤트 등으로 다양한 고객 확보 전략 실행<ul>
+<li>팬 수</li>
+<li>팔로워 수</li>
+<li>구독자 수</li>
+</ul>
+</li>
+<li>목표를 어느정도 달성하면 목표를 재설정하거나 추가<ul>
+<li>관계를 강화하고 활용하는 방향 (정량 -&gt;정성)</li>
+</ul>
+</li>
+<li>소셜미디어가 가진 특수성 고려<ul>
+<li>예: 역조공 이벤트</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="제품에-대해-쉽게-알려주자"><a href="#제품에-대해-쉽게-알려주자" class="headerlink" title="제품에 대해 쉽게 알려주자"></a>제품에 대해 쉽게 알려주자</h2><ul>
+<li>기업이 제품에 대해 하고 싶은 말을 전달해서는 고객에 도움을 줄 수 없음. 정보를 제공하는 자가 아니라 습득하는 자가 ‘갑’임을 명심</li>
+<li>현실에서는 고객들이 정보를 열성적으로 정독한다는 관점에서 만들어진 제품정보가 더 많은데 고객은 정독하지 않음.</li>
+<li>고객의 입장에서 고객의 관점으로 쉽게 이해하고 받아들일 수 있는 정보를 만들어야 함. </li>
+<li>누구도 우리 제품 정보에 관심이 없고, 심지어 읽고 싶어 하지 않는다는 전제하에 제품정보 콘텐츠를 제작해야 함</li>
+</ul>
+<h2 id="고객을-참여-시키자"><a href="#고객을-참여-시키자" class="headerlink" title="고객을 참여 시키자"></a>고객을 참여 시키자</h2><ul>
+<li>쉬운(덕질)놀이</li>
+<li>있어 보이는 결과물</li>
+<li>재가공 및 확산</li>
+</ul>
+<h2 id="지지자를-연결하자-소속감-부여"><a href="#지지자를-연결하자-소속감-부여" class="headerlink" title="지지자를 연결하자: 소속감 부여"></a>지지자를 연결하자: 소속감 부여</h2><ul>
+<li>지지자와 브랜드를 연결</li>
+<li>지지자와 지지자를 연결 연결</li>
+<li>지지자들에게 소속감을 부여하는 것이 핵심</li>
+<li>브랜드 팬덤은 특정한 제품과 서비스를 지지한다는 동질감을 중심으로 팬덤에 소속되었다는 심리적 위안을 제공해야 함.</li>
+<li>일반 고객과 구분 지어 부르는 이름: 팬클럽명<ul>
+<li>예: 유퀴저, 자기님</li>
+</ul>
+</li>
+</ul>
+<h2 id="팬으로-육성하자"><a href="#팬으로-육성하자" class="headerlink" title="팬으로 육성하자"></a>팬으로 육성하자</h2><p>참여를 기반으로 3가지 거리를 제공</p>
+<ul>
+<li>학습할 거리<ul>
+<li>통제받는 것보다 자유의지로 활동하기 원하기 때문에 학습 거리를 제공하되 학습을 강제해선 안됨</li>
+<li>비하인드 스토리, 탄생 비화, 배경, 세계관</li>
+</ul>
+</li>
+<li>이야깃 거리<ul>
+<li>수다거리, 화제거리</li>
+</ul>
+</li>
+<li>협업 거리<ul>
+<li>포르쉐는 전세계 50만명이 넘는 회원들의 운전 경로를 기록하고 분석해 공유하는 앱 로드 제공</li>
+<li>배달의 민족 배짱이의 밤, 파티 개최, 봄 소풍등 모임 개최</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="부록-책에서-건진-아이디어"><a href="#부록-책에서-건진-아이디어" class="headerlink" title="[부록] 책에서 건진 아이디어"></a>[부록] 책에서 건진 아이디어</h2><ol>
+<li><p>모 기업 영업사원 QR코드 스캔하면 무슨일이?</p>
+<ul>
+<li>기업 회장님의 사원 소개 영상이 나옴</li>
+<li>“지금 우리 회사의 OOO 대리를 만나보셨죠? 그 친구는…” 회장님이 해당 직원을 소개하는 내용 - 메타버스로 가능</li>
+</ul>
+</li>
+<li><p>이벤트 참여의 결과물을 있어 보이게 한 사례</p>
+<ul>
+<li>#채워 바나나 이벤트 : ㅏㅏㅏ맛 우유 에 고객이 자음을 채워 메시지 완성 해시태그 SNS 업로드</li>
+</ul>
+</li>
+<li><p>오타쿠의 수집 욕구</p>
+<ul>
+<li>수집 욕구: 관심 대상에 대한 정보나 상품 등을 수집하려는 욕구, 덕질을 시작 할 때 모든 것을 갖춤으로써 우월감을 느끼고 싶어함. 수집 욕구에 한계가 없다. (오타쿠 산업 불황론!)</li>
+</ul>
+</li>
+</ol>
+<hr>
+
+        </div>
+        <hr>
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/blog/">home</a>
+            </div>
+        </section>
+
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/blog/2022/02/15/book-fandom/">커뮤니티 책/ 팬덤경제학 - B04</a>
+            
+            
+            <a class="next" rel="next" href="/blog/2022/02/07/book-toylism/">경영 책/ 토이리즘 - B02</a>
+            
+        </section>
+
+
+    </article>
+
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
