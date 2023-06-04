@@ -1,3 +1,4 @@
+/* 0604 오후 수정 */
 html {
   font-family: $font-family;
 }
@@ -16,7 +17,7 @@ html::-webkit-scrollbar-thumb:hover {
 body {
   font-size: 12pt;
   font-weight: 350;
-  line-height: 1.6em;
+  line-height: 1.7em;
   overflow: overlay;
   background-color: $light-background-color;
   color: $light-font-color;

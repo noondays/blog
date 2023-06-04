@@ -1,4 +1,4 @@
-/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* 0604 오후 수정 */
 /* Document
    ========================================================================== */
 /**
@@ -24,6 +24,13 @@ body {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font-weight: 350;
+}
+h2 {
+  font-weight: 400;
+}
+h3 {
+  font-weight: 600;
 }
 /* Grouping content
    ========================================================================== */
