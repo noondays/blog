@@ -6,9 +6,9 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2em /* 2 */;
   margin: 0.67em 0;
-  font-weight: 350;
+  font-weight: 300;
 }
 h2 {
   font-weight: 400;
@@ -248,6 +248,14 @@ a:hover {
   flex-direction: column;
 }
 .main .container {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.main .containerpost {
   padding-left: 1em;
   padding-right: 1em;
   height: 100%;
@@ -735,8 +743,9 @@ header label {
   margin: 0 !important;
 }
 .post-wrap .post-title {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.5em;
+  font-weight: 400;
 }
 .post-wrap .post-meta {
   color: rgba(85,85,85,0.529) !important;
@@ -1285,7 +1294,7 @@ header label {
   }
 }
 @media (min-width: 1279px) {
-  .main .container {
+  .main .containerpost {
     padding-left: 1em;
     padding-right: 20em;
     display: flex; /* display를 flex로 설정 */

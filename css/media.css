@@ -152,7 +152,7 @@
   }
 }
 @media (min-width: 1279px) {
-  .main .container {
+  .main .containerpost {
     padding-left: 1em;
     padding-right: 20em;
     display: flex; /* display를 flex로 설정 */

@@ -31,6 +31,14 @@
   padding-left: 1em;
   padding-right: 1em;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.main .containerpost {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
