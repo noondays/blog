@@ -17,6 +17,10 @@ h2 {
 }
 h3 {
   font-weight: 400;
+}
+h5 {
+  font-weight: 400;
+  font-size: 0.9em;
   line-height: 0; /* 줄 간격 조정 */
 }
 hr {
@@ -204,7 +208,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 body {
   font-size: 12.5pt;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6em;
   overflow: overlay;
   background-color: #fff;
@@ -696,6 +700,7 @@ header label {
   transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
 }
 .archive-item-date {
+  font-weight: 300;
   float: right;
   text-align: right;
   color: #a9a9b3;
@@ -809,7 +814,6 @@ header label {
   padding-bottom: 0.3em;
 }
 .post-content h1::before {
-  content: "#";
   margin-right: 5px;
   color: #2d96bd;
 }
@@ -832,12 +836,14 @@ header label {
   color: #eee;
 }
 .post-content h4::before {
-  content: "*";
   margin-right: 5px;
   color: #2d96bd;
 }
 .dark-theme .post-content h4::before {
   color: #eee;
+}
+.post-content h5::before {
+  content: "#";
 }
 .post-content a {
   color: #2d96bd;
