@@ -843,7 +843,7 @@ header label {
   color: #eee;
 }
 .post-content h5::before {
-  content: "#";
+  content: "";
 }
 .post-content a {
   color: #2d96bd;

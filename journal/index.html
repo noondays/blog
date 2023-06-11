@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="author" content="noonday">
+    <meta name="author" content="P376">
 
 
 
 
-<link rel="canonical" href="https://noondays.github.io/blog/2022/02/05/noondi-log-pricing/">
+<link rel="canonical" href="https://noondays.github.io/blog/journal/">
 
-<title>디지털잡담 - 투자자를 위한 요금제 등장! | noonday님의 블로그</title>
+<title>✍ 프리토타이핑 일지 | 👩‍🚀P376ㅣ프리토타이핑 중</title>
 
 
 
@@ -44,7 +44,7 @@
     
 
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/blog/rss2.xml" title="noonday님의 블로그" type="application/rss+xml">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/blog/rss2.xml" title="👩‍🚀P376ㅣ프리토타이핑 중" type="application/rss+xml">
 </head>
 
 <body>
@@ -70,7 +70,7 @@
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/blog/">Home</a></div>
+            <div class="navbar-header header-logo"><a href="/blog/">👩‍🚀 P376</a></div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/blog/archives">Posts</a>
@@ -92,7 +92,7 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/blog/">Home</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/blog/">👩‍🚀 P376</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
@@ -128,29 +128,81 @@
                 <div class="containerpost">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">디지털잡담 - 투자자를 위한 요금제 등장!</h1>
+            <h1 class="post-title">✍ 프리토타이핑 일지</h1>
         </header>
 
         <div class="post-content">
-            <p><font color="gray">이런, 신박한 요금제라니</font></p>
-<p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://disquiet.io/">디스콰이엇</a>을 보는데 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://disquiet.io/@stevenjang/makerlog/155">신박한 SaaS 요금제를 공유합니다</a>란 글을 우연히 보게됐다. </p>
-<p>신박한 요금제? 얼마나 신박한거지? 하고 보니..이런 정말 신박하다. 이게 말로만 듣던 DAO 컨셉인가? 란 생각을 잠시했다. 투자자 등급 가격은 일반 가격보다 무려 8배나 비싸다! 대신 기여자 목록에 등재되고, 미디어에도 노출되는 듯 하다. 또 프로덕트팀과 컨택할 수 있다는 특권이 제공된다! 자세한건 아래 그림 참조.</p>
-<blockquote>
-<p>이를 보며, 웹3 세상에서는 투자자가 되거나 투자를 받거나 이 둘 중 하나가 되야 살아남을 수 있겠단 생각이 들었다. </p>
-</blockquote>
-<p>프로덕트를 완벽하게 계획하고 개발하고, 마케팅으로 파는건 구시대 발상이다. 이 교훈은 드로우앤드류님 유투브에서 배웠다. 이런걸 가르쳐 주시다니!😍😍 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://youtu.be/dtgEhPv5Ww0">영상은 여기서 볼 수 있다.</a></p>
-<p>눈덩이 굴려 눈사람 만들듯 작게 작게 mvp만들고 시장 반응보고 초기 유저(팬이라고 불러본다) 포섭하고 함께 프로덕트를 성장시키는것, 수익이 났을땐 이를 함께 쉐어하는 성장 모델이 눈 앞에 다가왔다. 초기 유저(팬)가 인베스터로 들어온다면 자발적 마케팅도 해주시고 제품 개선에도 적극적 의견을 주시고, 자금도 지원해주시고. 이런 팬이 소수가 아니라 다수가 된다면 무시무시한 일이 일어나지 않을까?😆(두근두근) </p>
-<p>카카오톡, 페이스북은 사용자에게 무료로 서비스를 제공하는 대신 광고 수익으로 비용을 충당했다. 하지만 플랫폼이 되면서 막대한 수익을 벌어들였고 마침내 자본주의 괴물이 되버렸다. 이런 플랫폼 기업의 성장을 본 우리는 이게 바로 플랫폼, 네트워크 효과구나!를 깨닫게 되고. 그렇다면 저 검증된 모델을 따라가되, 성장 수익&#x2F;리스크를 함께 부담하면 되는거 아냐? 같이 성장시키고 같이 키우자!란 컨셉이 나온 듯 하다. 그게 요새 유행인 크립토, DAO, 커뮤니티, nft가 아닐까.. 생각🤑🤑</p>
+            <h4 id="일지-230608"><a href="#일지-230608" class="headerlink" title="일지 #230608"></a>일지 #230608</h4><p>매일 적을지는 모르겠지만 시작이 반이라 했으니 일단 적는 것에 의의를 주자. 사실 비밀인데, 시작이 반이 아니라는 것이 증명됐다고 한다.(출처는 가물가물) 사실 난 기획자다. 개발을 못한다. 하지만 ChatGPT가 할 수 있다고 하니 완제품은 아니더라도 시시제품, 그래도 아이디어 증명 정도는 하겠지?라며 만든 사이트가 지금 보는 화면이다. hexo로 만들었고, 수정은 ChatGPT가 한다. </p>
 <br>
-
-<p>투자자를 위한 가격 정책<br><img src="https://noondayz.github.io/blog/images/0206_pricing.png" alt="pricing" width="630" height="330"></p>
-<p><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.sizze.io/">사이트는 sizze.io</a></p>
-<hr>
-
         </div>
         <hr>
         <section class="post-tags">
@@ -169,10 +221,8 @@
 
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/blog/2022/02/07/book-toylism/">토이리즘</a>
             
-            
-            <a class="next" rel="next" href="/blog/2022/02/02/fan-model/">메모 - 알면 사랑하고, 사랑하면 책임진다.</a>
+            <a class="next" rel="next" href="/blog/qotd/">📖 오늘의 묵상(QOTD)</a>
             
         </section>
 
@@ -184,7 +234,7 @@
             </div>
             <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© noonday | Powered by <a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank" rel="external nofollow noopener noreferrer">Chic</a></span>
+        <span>© P376 | Powered by <a href="https://hexo.io" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank" rel="external nofollow noopener noreferrer">Chic</a></span>
     </div>
 </footer>
 
