@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://noondays.github.io/blog/sitemap.xml
+Sitemap: https://p376.github.io/blog/sitemap.xml
