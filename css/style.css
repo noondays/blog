@@ -254,6 +254,13 @@ a:hover {
   text-decoration: none;
   transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
 }
+hr {
+  border: none;
+  border-top: 1px solid #c6c5ca; /* 라인 선의 색상 설정 */
+  margin: 10px 20px; /* 위 아래 여백 설정 */
+  margin-left: 20px; /* 좌여백 설정 */
+  margin-right: 0; /* 우여백 설정 */
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -677,7 +684,7 @@ header label {
   padding-top: 2rem;
 }
 .post-wrap .archive-item {
-  margin-left: 0rem;
+  margin-left: 1.5rem;
 }
 .archive-item-link {
   display: inline-block;
