@@ -65,7 +65,7 @@ a:hover {
 hr {
   border: none;
   border-top: 1px solid #c6c5ca; /* 라인 선의 색상 설정 */
-  margin: 10px 20px; /* 위 아래 여백 설정 */
-  margin-left: 20px; /* 좌여백 설정 */
+  margin: 10px 0px; /* 위 아래 여백 설정 */
+  margin-left: 0; /* 좌여백 설정 */
   margin-right: 0; /* 우여백 설정 */
 }
