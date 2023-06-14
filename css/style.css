@@ -693,7 +693,7 @@ header label {
   text-decoration: none;
   word-wrap: break-word;
   white-space: normal;
-  margin-left: 1.4em;
+  margin-left: 0em;
   line-height: 2; /* 줄 간격을 조정하려는 값으로 설정하세요 */
 }
 .archive-item-link:hover {
