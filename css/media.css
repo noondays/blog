@@ -105,7 +105,14 @@
   .archive {
     width: 90%;
   }
-  .archive .archive-item .archive-item-date {
+  .archive .archive-item {
+    width: 100%;
+  }
+  .archive .archive-item-link {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .archive .archive-item-date {
     display: none;
   }
   #dynamic-to-top {
@@ -120,6 +127,9 @@
   }
   .post-warp {
     padding-top: 6em;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
   }
   .post-warp .archive-item-date {
     display: none;
@@ -155,7 +165,9 @@
   .main .containerpost {
     padding-left: 1em;
     padding-right: 20em;
-    display: flex; /* display를 flex로 설정 */
-    justify-content: flex-start; /* 왼쪽 정렬 */
+    display: flex;
+    justify-content: flex-start;
+    word-wrap: break-word;
+    white-space: normal;
   }
 }

@@ -687,10 +687,14 @@ header label {
   margin-left: 0rem;
 }
 .archive-item-link {
+  font-size: 1em;
+  font-weight: 450;
   display: inline-block;
   text-decoration: none;
-  overflow: hidden;
-  white-space: nowrap;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-left: 1.4em;
+  line-height: 2; /* 줄 간격을 조정하려는 값으로 설정하세요 */
 }
 .archive-item-link:hover {
   color: #2d96bd;
@@ -1294,7 +1298,14 @@ header label {
   .archive {
     width: 90%;
   }
-  .archive .archive-item .archive-item-date {
+  .archive .archive-item {
+    width: 100%;
+  }
+  .archive .archive-item-link {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .archive .archive-item-date {
     display: none;
   }
   #dynamic-to-top {
@@ -1309,6 +1320,9 @@ header label {
   }
   .post-warp {
     padding-top: 6em;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
   }
   .post-warp .archive-item-date {
     display: none;
@@ -1341,8 +1355,10 @@ header label {
   .main .containerpost {
     padding-left: 1em;
     padding-right: 20em;
-    display: flex; /* display를 flex로 설정 */
-    justify-content: flex-start; /* 왼쪽 정렬 */
+    display: flex;
+    justify-content: flex-start;
+    word-wrap: break-word;
+    white-space: normal;
   }
 }
 .post-content figure.highlight {

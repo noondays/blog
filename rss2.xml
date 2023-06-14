@@ -9,11 +9,37 @@
     <atom:link href="https://p376.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 13 Jun 2023 06:29:58 GMT</pubDate>
+    <pubDate>Wed, 14 Jun 2023 09:06:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>✍ 후기</title>
+      <title>📑 Stable Diffusion으로 QR코드 만들기</title>
+      <link>https://p376.github.io/blog/sd-qrcode/</link>
+      <guid>https://p376.github.io/blog/sd-qrcode/</guid>
+      <pubDate>Wed, 14 Jun 2023 03:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h4 id=&quot;결과물&quot;&gt;&lt;a href=&quot;#결과물&quot; class=&quot;headerlink&quot; title=&quot;결과물&quot;&gt;&lt;/a&gt;결과물&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://news.hada.io/topic?id=9384&quot;&gt;여기&lt;/a&gt;에서 핫하다고 하길래 따라해</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h4 id="결과물"><a href="#결과물" class="headerlink" title="결과물"></a>결과물</h4><p><a href="https://news.hada.io/topic?id=9384">여기</a>에서 핫하다고 하길래 따라해봤다. 많은 삽질을 통해 성공!<br>인식률이 완전 좋진 않지만 그래도 초점만 잘 맞추면 큐알코드를 잘 인식한다.</p><p><img src="/blog/./image/p365-qrcode.png" alt="qr코드보기"></p><h4 id="만드는-방법"><a href="#만드는-방법" class="headerlink" title="만드는 방법"></a>만드는 방법</h4><p>노트북 사양이 딸려 구글 코랩으로 만들었다. (구글 만세!)<br>더불어 내 그래픽카드가 저사양이라는걸 이번에 알았다. 음..<br>만드는 프롬프트는 아래 링크에 자세히 설명되어 있다.<br><a href="https://stable-diffusion-art.com/qr-code/">https://stable-diffusion-art.com/qr-code/</a></p><p><a href="https://colab.research.google.com/drive/1QScoIFrJzcwbr6qE8Xisy0NotPbKcn-y?usp=sharing">어마어마한 삽질로 실행이 증명된 이 코랩 문서</a>를 누르면 바로 따라할 수 있다. </p><h4 id="코멘트"><a href="#코멘트" class="headerlink" title="코멘트"></a>코멘트</h4><p>여러가지 응용을 하면 좋을 것 같다고 동생이 추천. 미아찾기나 큐알코드로 돈 이체시 광고로 쓰면 재밌지 않을까? 란다. 그렇단다.</p><br>]]></content:encoded>
+      
+      
+      <category domain="https://p376.github.io/blog/categories/%EA%B8%B0%ED%83%80/">기타</category>
+      
+      
+      <category domain="https://p376.github.io/blog/tags/QRcode-Stable-Diffusion/">QRcode, Stable Diffusion</category>
+      
+      
+      <comments>https://p376.github.io/blog/sd-qrcode/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>📑 후기</title>
       <link>https://p376.github.io/blog/journal/</link>
       <guid>https://p376.github.io/blog/journal/</guid>
       <pubDate>Thu, 08 Jun 2023 03:00:00 GMT</pubDate>
@@ -37,7 +63,7 @@
     </item>
     
     <item>
-      <title>📖 오늘의 묵상(QOTD)</title>
+      <title>📑 오늘의 묵상 (QOTD)</title>
       <link>https://p376.github.io/blog/qotd/</link>
       <guid>https://p376.github.io/blog/qotd/</guid>
       <pubDate>Mon, 05 Jun 2023 03:00:00 GMT</pubDate>

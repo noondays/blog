@@ -9,8 +9,16 @@
 
 
     <url>
+        <loc>https://p376.github.io/blog/sd-qrcode/</loc>
+        <lastmod>2023-06-14T09:06:32.633Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://p376.github.io/blog/journal/</loc>
-        <lastmod>2023-06-13T06:29:58.803Z</lastmod>
+        <lastmod>2023-06-14T08:30:55.329Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,7 +26,7 @@
 
     <url>
         <loc>https://p376.github.io/blog/qotd/</loc>
-        <lastmod>2023-06-13T02:51:39.317Z</lastmod>
+        <lastmod>2023-06-14T08:30:53.218Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
