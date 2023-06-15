@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>📒 Stable Diffusion으로 QR코드 만들기</title>
+    <title>Stable Diffusion으로 QR코드 만들기</title>
     <url>/blog/sd-qrcode/</url>
     <content><![CDATA[<h4 id="결과물"><a href="#결과물" class="headerlink" title="결과물"></a>결과물</h4><p><a href="https://news.hada.io/topic?id=9384">여기</a>에서 핫하다고 하길래 따라해봤다. 많은 삽질을 통해 성공!<br>인식률이 완전 좋진 않지만 그래도 초점만 잘 맞추면 큐알코드를 잘 인식한다.</p>
 <p><img src="/blog/./image/p365-qrcode.png" alt="qr코드보기"></p>
@@ -17,7 +17,7 @@
       </tags>
   </entry>
   <entry>
-    <title>📒 후기</title>
+    <title>후기</title>
     <url>/blog/journal/</url>
     <content><![CDATA[<h4 id="로그-230608"><a href="#로그-230608" class="headerlink" title="로그 #230608"></a>로그 #230608</h4><p>매일 적을지는 모르겠지만 시작이 반이라 했으니 일단 적는 것에 의의를 주자. 사실 비밀인데, 시작이 반이 아니라는 것이 증명됐다고 한다.(출처는 가물가물) 사실 난 기획자다. 개발을 못한다. 하지만 ChatGPT가 할 수 있다고 하니 완제품은 아니더라도 시시제품, 그래도 아이디어 증명 정도는 하겠지?라며 만든 사이트가 지금 보는 화면이다. hexo로 만들었고, 수정은 ChatGPT가 한다. </p>
 </br>]]></content>
@@ -26,7 +26,7 @@
       </categories>
   </entry>
   <entry>
-    <title>📒 오늘의 묵상 (QOTD)</title>
+    <title>오늘의 묵상 (QOTD)</title>
     <url>/blog/qotd/</url>
     <content><![CDATA[<div class="profile-section">
   <div class="profile-picture-container">
